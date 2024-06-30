@@ -117,8 +117,9 @@ function decodeAndCompare() {
       console.log(encryptedStr, decodedStr);
       if (encryptedStr === decodedStr) {
         outputHtml = `
-                    <p class="text-green-700"><strong>Original String:</strong> ${originalStr}</p>
+                    
                     <p class="text-blue-700"><strong>Decoded String:</strong> ${decodedStr}</p>
+                    <p class="text-green-700"><strong>Original String:</strong> ${originalStr}</p>
                 `;
         found = true;
         break;
@@ -129,7 +130,7 @@ function decodeAndCompare() {
       outputHtml = `<p class="text-yellow-700">Decoded string does not match any original string in the list.</p>`;
     }
   } else {
-    outputHtml = `<p class="text-red-700">Invalid Base64 string</p>`;
+    outputHtml = `<p class="text-red-700">Invalid initial string</p>`;
   }
 
   document.getElementById("output").innerHTML = outputHtml;
