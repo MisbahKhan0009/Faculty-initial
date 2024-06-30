@@ -114,7 +114,7 @@ function decodeAndCompare() {
 
     for (let i = 0; i < data.length; i++) {
       const { originalStr, encryptedStr } = data[i];
-    //   console.log(encryptedStr, decodedStr);
+      console.log(encryptedStr, decodedStr);
       if (encryptedStr === decodedStr) {
         outputHtml = `
                     <p class="text-green-700"><strong>Original String:</strong> ${originalStr}</p>
