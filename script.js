@@ -10,7 +10,7 @@ function decodeAndCompare() {
   const base64Input = document.getElementById("base64Input").value;
   const decoded = atob(base64Input);
   const matchingEntry = window.data.find(
-    (entry) => entry.encryptedStr === base64Input
+    (entry) => entry.encryptedStr === decoded
   );
   const originalStr = matchingEntry
     ? matchingEntry.originalStr
@@ -18,8 +18,8 @@ function decodeAndCompare() {
 
   const outputElement = document.getElementById("output");
   outputElement.innerHTML = `
-    <p class="text-gray-700">Decoded: ${decoded}</p>
-    <p class="text-gray-700">Original: ${originalStr}</p>
+    <p class="text-green-700 text-lg font-light">Decoded: ${decoded}</p>
+    <p class="text-blue-700 text-lg font-light">Original: ${originalStr}</p>
   `;
 }
 

@@ -9,18 +9,18 @@
     <script src="script.js" defer></script>
   </head>
   <body
-    class="bg-gradient-to-r from-[#093028] to-[#237A57] flex items-center justify-center h-screen"
+    class="bg-white flex flex-col items-center justify-center h-screen"
   >
-    <div class="glassmorphism p-8 rounded-xl shadow-2xl w-full max-w-md">
-      <h1 class="text-3xl font-bold mb-4 text-center text-white">
-        Faculty Initial Revealer
-      </h1>
+    <h1 class="text-5xl font-thin mb-10 text-center text-Black">
+      Faculty Initial Revealer
+    </h1>
+    <div class="border border-black p-8 rounded-3xl shadow-md w-full max-w-md">
       <div class="mb-4">
-        <label for="base64Input" class="block text-sm font-medium text-white">
+        <label for="base64Input" class="block  font-thin text-xl text-Black">
           Encoded initial from
           <a
             href="https://rds3.northsouth.edu/index.php/attendance/attendance/studentAttendanceLanding"
-            class="underline cursor-pointer text-indigo-200"
+            class="underline cursor-pointer text-black"
           >
             Attendance URL
           </a>
@@ -28,23 +28,22 @@
         <input
           type="text"
           id="base64Input"
-          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          class="mt-1 block text-lg font-thin w-full px-3 py-3 my-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black"
           placeholder="Enter Encoded initial here"
         />
       </div>
       <button
         onclick="decodeAndCompare()"
-        class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors duration-300"
+        class="w-full bg-black text-white py-4 px-4 font-thin text-xl  rounded-md hover:bg-gray-900 transition-colors duration-300"
       >
         Decode and Compare
       </button>
       <div
         id="output"
-        class="mt-4 p-4 bg-white bg-opacity-70 border border-gray-300 rounded-md shadow-inner"
+        class="mt-4 p-4 bg-white  border border-black rounded-md "
       >
-        <p class="text-gray-700">Output will appear here...</p>
+        <p class="text-black text-lg font-light opacity-70">Output will appear here</p>
       </div>
-      
     </div>
   </body>
 </html>
