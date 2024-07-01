@@ -1,3 +1,2 @@
 # Faculty-initial
-data.json : faculty initial with original & encrypted version
-script.js : decoder and compearer
+```data.json``` contains faculty initial with original & encrypted version and  ```script.js``` contains decoder and compearer
